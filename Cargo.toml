@@ -12,8 +12,8 @@ crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 wasm-bindgen = "0.2"
-tree-sitter = { git = "https://github.com/kossnocorp/tree-sitter", branch = "master" }
-tree-sitter-typescript = { git = "https://github.com/kossnocorp/tree-sitter-typescript", branch = "master" }
+tree-sitter = { git = "https://github.com/kossnocorp/tree-sitter", branch = "wasm-all" }
+tree-sitter-typescript = { git = "https://github.com/kossnocorp/tree-sitter-typescript", branch = "wasm-repro" }
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.56"

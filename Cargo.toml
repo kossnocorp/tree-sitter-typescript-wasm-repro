@@ -1,0 +1,28 @@
+[package]
+name = "tree-sitter-typescript-wasm-repro"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[workspace]
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+tree-sitter = { git = "https://github.com/kossnocorp/tree-sitter", branch = "master" }
+tree-sitter-typescript = { git = "https://github.com/kossnocorp/tree-sitter-typescript", branch = "master" }
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.56"
+
+# NOTE: Use these for local development with path overrides:
+
+# [patch."https://github.com/kossnocorp/tree-sitter"]
+# tree-sitter = { path = "../tree-sitter/lib" }
+# tree-sitter-language = { path = "../tree-sitter/crates/language" }
+
+# [patch."https://github.com/kossnocorp/tree-sitter-typescript"]
+# tree-sitter-typescript = { path = "../tree-sitter-typescript" }
